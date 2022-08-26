@@ -1,4 +1,13 @@
 {
   "private": true,
-  "workspaces": ["app", "dashboard"]
+  "workspaces": [
+    "app",
+    "dashboard",
+    "shared"
+  ],
+  "scripts": {
+    "app": "yarn workspace app start",
+    "dashboard": "yarn workspace dashboard start",
+    "platform": "yarn run app & yarn run dashboard"
+  }
 }
